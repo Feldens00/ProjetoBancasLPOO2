@@ -1,0 +1,27 @@
+﻿
+
+
+
+@model ProjetoBancaTCC_OO2.Models.Disciplina
+@{
+    ViewBag.Title = "CreateDisciplina";
+}
+
+<h2>Add Disciplina</h2>
+
+
+
+<div class="panel">
+    <form action="~/Disciplina/CreateDisciplina" method="post">
+        <div class="form-group">
+            <label>Id</label>
+            <input class="form-control" type="text" id="Id" name="Id"  />
+        </div>
+
+        <div class="form-group">
+            <label>Nome</label>
+            <input class="form-control" placeholder="Nome da pessoa" type="text" id="Nome" name="Nome" />
+        </div>
+        <button class="btn btn-default" type="submit">Salvar</button>
+    </form>
+</div>

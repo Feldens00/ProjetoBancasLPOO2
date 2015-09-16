@@ -1,0 +1,22 @@
+﻿@model ProjetoBancaTCC_OO2.Models.Semestre
+@{
+    ViewBag.Title = "UpdateSemestre";
+}
+
+<h2>Atualizar Semestre</h2>
+
+<div class="panel">
+    <form action="~/Semestre/UpdateSemestre" method="post">
+        <div class="form-group">
+            <label>Id</label>
+            <input class="form-control" type="number" id="Id" name="Id" value="@Model.Id" />
+        </div>
+
+        <div class="form-group">
+            <label>Nome</label>
+            <input class="form-control" type="text" id="Nome" name="Nome" value="@Model.Nome" />
+        </div>
+
+        <button type="submit" class="btn btn-default">Atualizar Semestre</button>
+    </form>
+</div>

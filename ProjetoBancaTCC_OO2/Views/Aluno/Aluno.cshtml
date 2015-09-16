@@ -1,0 +1,26 @@
+﻿@model IEnumerable<ProjetoBancaTCC_OO2.Models.Aluno>
+@{
+    ViewBag.Title = "Alunos";
+}
+
+<h2>Alunos</h2>
+<a class="btn btn-primary" href="~/Aluno/CreateAluno">Adicionar Aluno</a>
+<table class="table table-responsive table-hover">
+    <thead>
+        <tr>
+            <th>Nome</th>
+            <th>Id</th>
+            <th></th>
+            <th></th>
+        </tr>
+    </thead>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <th>@item.Nome</th>
+            <th>@item.Id</th>
+            <th><a class="btn btn-warning" href="~/Aluno/Update/@item.Id">Atualizar</a></th>
+            <th><a class="btn btn-danger" href="~/Aluno/Delete/@item.Id">Deletar</a></th>
+        </tr>
+    }
+</table>
